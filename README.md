@@ -4,7 +4,7 @@ A list of ui challenges that are implemented on Semicolon Academy channel, the b
 
 ## list of challenges
 
-- 001 - [Hey pin menu](/tree/master/001-hey-pin-menu) ([video](#))
+- 001 - [Hey pin menu](001-hey-pin-menu) ([video](#))
 - 002 - 
 
 ## You can always suggest a new challenge
