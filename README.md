@@ -4,5 +4,11 @@ A list of ui challenges that are implemented on Semicolon Academy channel, the b
 
 ## list of challenges
 
-- Hey pin menu (code, video, blog)
+- 001 - Hey pin menu (code, video, blog)
 -
+
+## You can always suggest a new challenge
+> what you suggest could be the next challenge that we make together
+
+- on this hashtag [#SemicolonChallenge](https://twitter.com/hashtag/SemicolonChallenge?f=live) 
+- or mention Semicolon Academy ([@SemicolonA](https://twitter.com/SemicolonA)) with the above hashtag as well
