@@ -1,0 +1,14 @@
+{
+  "2019-12-04": {
+    "title": "boardme Founders meeting",
+    "startTime": "17:30",
+    "endTime": "18:15",
+    "joinZoomLink": "#",
+    "attendees": [
+      { "email": "passion@email.com", "status": "accept" },
+      { "email": "art@email.com", "status": "accept" },
+      { "email": "love@email.com", "status": "tentative" },
+      { "email": "technology@email.com", "status": "tentative" }
+    ]
+  }
+}
