@@ -1,0 +1,163 @@
+:root {
+  --black: #212329;
+  --white: #fff;
+  --gray: #60646f;
+  --primary-color: #5aa2f7;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./Montserrat-Bold.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./Montserrat-Medium.ttf');
+  font-weight: 700;
+}
+
+.event-container {
+  display: flex;
+  font-family: Montserrat;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.event-container__date-block {
+  background: var(--black);
+  color: var(--white);
+  align-self: center;
+  padding: 25px 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.event-container__date-block:hover ~ .event-container__event-details,
+.event-container__event-details:hover {
+  visibility: visible;
+}
+
+.date-block__month {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.date-block__day {
+  font-size: 30px;
+}
+
+.event-container__event-details {
+  background: var(--black);
+  color: var(--white);
+  padding: 40px;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 25px;
+  width: 500px;
+  visibility: hidden;
+}
+
+.event-container__event-details:before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 48%;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--black);
+  transform: rotate(45deg);
+  /* * this is an alternative in case of sharp border
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid var(--black); */
+}
+
+.event-details__title {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 900;
+}
+
+.event-details__date-range {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.action-bar__btn {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.event-details__action-bar {
+  margin: 20px 0;
+}
+
+.action-bar__btn--primary {
+  background: var(--primary-color);
+}
+
+.action-bar__btn--dimmed {
+  opacity: 0.5;
+}
+
+.event-details__attendees {
+  margin-top: 30px;
+}
+
+.event-details__attendees h2 {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.event-details__attendees ul {
+  list-style: none;
+  padding: 0;
+}
+
+.attendees__email {
+  font-size: 16px;
+  line-height: 30px;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.attendees__email:last-child {
+  margin-bottom: 0;
+}
+
+.attendees__email:before {
+  content: ' ';
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  border: 2px solid var(--gray);
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.attendees__email--accepted:before {
+  content: '✓';
+}
+
+.attendees__email--tentative:before {
+  content: '?';
+  opacity: 0.5;
+}
