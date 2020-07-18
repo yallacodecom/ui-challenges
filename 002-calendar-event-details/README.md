@@ -4,9 +4,11 @@ In this challenge we need to implement a new UI component I found on https://uid
 
 ![](https://i.imgur.com/qFfRahB.gif)
 
-## Challenging items
+## Challenging list
 
-- 
+- Style the boxes in the right and left using flex-box
+- Create the triangle tip for the tooltip with a smooth border
+- show and hide the tooltip on hover without messing with layout
 
 ## More explanations
 
