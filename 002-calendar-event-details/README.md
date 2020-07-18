@@ -1,6 +1,6 @@
 # 002 Calendar event details
 
-In this challenge we need to implement a new UI component I found on https://uidesigndaily.com/ and you can access it and even download the sketch from [here](https://uidesigndaily.com/) and below is the target one:
+In this challenge we need to implement a new UI component I found on https://uidesigndaily.com/ and you can access it and even download the sketch from [here](https://uidesigndaily.com/) and below is the target look:
 
 ![](https://i.imgur.com/qFfRahB.gif)
 
