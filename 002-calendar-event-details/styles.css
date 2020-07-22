@@ -25,6 +25,10 @@
   margin-top: 100px;
 }
 
+.event-container > * {
+  box-shadow: 30px 50px 80px #33333390;
+}
+
 .event-container__date-block {
   background: var(--black);
   color: var(--white);
