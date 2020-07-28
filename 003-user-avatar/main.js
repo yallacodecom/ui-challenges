@@ -1,3 +1,5 @@
+import getAvatar from './getAvatar.js';
+
 const users = [
   {
     name: 'Helen Coppola',
@@ -5,15 +7,15 @@ const users = [
   },
   {
     name: 'Nick Robins',
-    avatar: 'https://www.w3schools.com/bootstrap4/img_avatar1.png',
+    avatar: '',
   },
   {
     name: 'Chris Harris',
-    avatar: 'https://www.w3schools.com/howto/img_avatar.png',
+    avatar: '',
   },
   {
     name: 'Sandra Osborne',
-    avatar: 'https://www.w3schools.com/howto/img_avatar2.png',
+    avatar: '',
   },
   {
     name: 'Tim Johnson',
@@ -29,7 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const appElm = document.getElementById('app');
   const listUserCards = document.createElement('div');
   users.forEach((user) => {
-    console.log(user);
+    const userCardElm = document.createElement('div');
+    userCardElm.className = 'userCard';
+    userCardElm.innerText = user.name;
+    userCardElm.prepend(getAvatar(user.name, user.avatar));
+    listUserCards.append(userCardElm);
   });
   appElm.append(listUserCards);
 });
