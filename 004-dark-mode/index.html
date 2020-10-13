@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dark mode</title>
+  </head>
+  <body>
+    <div id="dark-mode-toggle" title="Dark mode toggle">🌒</div>
+    <div class="container">
+      <img src="semicolon.png" class="logo" alt="Semicolon logo" />
+      <h1>Amazing Semicolon</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe repellat
+        quasi autem, repellendus eius minus nostrum dolor amet suscipit nisi.
+        Praesentium vel dolorum aperiam sint commodi incidunt, nobis nulla odit.
+      </p>
+      <div>
+        <button class="btn primary-btn">Primary</button>
+        <button class="btn secondary-btn">Secondary</button>
+      </div>
+    </div>
+    <script>
+      const toggleButton = document.querySelector('#dark-mode-toggle');
+      let darkMode = localStorage.getItem('theme');
+
+      if (darkMode === 'dark') enableDarkMode();
+
+      toggleButton.addEventListener('click', (e) => {
+        darkMode = localStorage.getItem('theme');
+        if (darkMode === 'dark') {
+          disableDarkMode();
+        } else {
+          enableDarkMode();
+        }
+      });
+
+      function enableDarkMode() {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        toggleButton.innerHTML = '☀️';
+      }
+
+      function disableDarkMode() {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+        toggleButton.innerHTML = '🌒';
+      }
+
+      window
+        .matchMedia('(prefers-color-scheme: dark)')
+        .addListener((e) => (e.matches ? enableDarkMode() : disableDarkMode()));
+    </script>
+  </body>
+</html>

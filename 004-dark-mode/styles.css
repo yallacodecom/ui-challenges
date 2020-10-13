@@ -1,0 +1,81 @@
+:root {
+  --primary-bg: #eee;
+  --primary-fg: #000;
+  --secondary-bg: #ddd;
+  --secondary-fg: #555;
+  --primary-btn-bg: #000;
+  --primary-btn-fg: #fff;
+  --secondary-btn-bg: #ff0000;
+  --secondary-btn-fg: #ffff00;
+  --image-opacity: 1;
+}
+
+.dark-mode {
+  --primary-bg: #282c35;
+  --primary-fg: #fff;
+  --secondary-bg: #1e2129;
+  --secondary-fg: #aaa;
+  --primary-btn-bg: #ddd;
+  --primary-btn-fg: #222;
+  --secondary-btn-bg: #780404;
+  --secondary-btn-fg: #baba6a;
+  --image-opacity: 0.85;
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--primary-fg);
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 750px;
+  text-align: center;
+}
+
+.logo {
+  width: 375px;
+  height: 375px;
+  opacity: var(--image-opacity);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 28px;
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--secondary-fg);
+  background: var(--secondary-bg);
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.primary-btn {
+  background: var(--primary-btn-bg);
+  color: var(--primary-btn-fg);
+}
+
+.secondary-btn {
+  background: var(--secondary-btn-bg);
+  color: var(--secondary-btn-fg);
+}
