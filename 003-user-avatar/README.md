@@ -2,7 +2,7 @@
 
 In this challenge we need to implement a very small challenge but full of tips as usual, and it should finally look like the following image:
 
-![challenge 003 preview](#)
+![challenge 003 preview](challenge.png)
 
 ## Challenging list
 
