@@ -2,7 +2,7 @@
 
 In this challenge we need to implement a dark mode in 3 different ways:
 
-![challenge 004 preview](#)
+![challenge 004 preview](challenge.gif)
 
 ## Challenging list
 
