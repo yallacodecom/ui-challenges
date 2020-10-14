@@ -22,14 +22,14 @@
       </div>
     </div>
     <script>
-      const toggleButton = document.querySelector('#dark-mode-toggle');
-      let darkMode = localStorage.getItem('theme');
+      const darkModeToggleBtn = document.getElementById('dark-mode-toggle');
+      let theme = localStorage.getItem('theme');
 
-      if (darkMode === 'dark') enableDarkMode();
+      if (theme === 'dark') enableDarkMode();
 
-      toggleButton.addEventListener('click', (e) => {
-        darkMode = localStorage.getItem('theme');
-        if (darkMode === 'dark') {
+      darkModeToggleBtn.addEventListener('click', () => {
+        theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
           disableDarkMode();
         } else {
           enableDarkMode();
@@ -37,15 +37,15 @@
       });
 
       function enableDarkMode() {
-        document.body.classList.add('dark-mode');
+        darkModeToggleBtn.innerHTML = '☀️';
         localStorage.setItem('theme', 'dark');
-        toggleButton.innerHTML = '☀️';
+        document.body.classList.add('dark-mode');
       }
 
       function disableDarkMode() {
-        document.body.classList.remove('dark-mode');
+        darkModeToggleBtn.innerHTML = '🌒';
         localStorage.setItem('theme', 'light');
-        toggleButton.innerHTML = '🌒';
+        document.body.classList.remove('dark-mode');
       }
 
       window
