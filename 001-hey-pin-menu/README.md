@@ -13,6 +13,6 @@ In this challenge we are supposed to implement the pin menu (set aside menu) in 
 ## More explainations
 
 - if you understand Arabic here is a link for a [youtube video](https://www.youtube.com/watch?v=4TPszCQt8nk) explaining the steps I took to implement that challenge,
-- but if you don't understand Arabic don't worry here is a [blog post](https://medhatdawoud.net/blog/hacking-hey-pin-menu) in English which should be helpful in understanding.
+- but if you don't understand Arabic don't worry here is a [blog post](https://medhatdawoud.net/blog/cloning-hey-pin-menu) in English which should be helpful in understanding.
 
 ## 💻  Happy coding and know on twitter if you need any help in doing that challenge ([@med7atdawoud](http://twitter.com/med7atdawoud)) or just say Hi 👋
