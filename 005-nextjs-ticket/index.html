@@ -71,8 +71,8 @@
 
       window.addEventListener('mousemove', (e) => {
         const centerPoint = { x: x + width / 2, y: y + height / 2 };
-        const degreeX = (e.clientX - centerPoint.x) * -0.02;
-        const degreeY = (e.clientY - centerPoint.y) * 0.02;
+        const degreeX = (e.clientX - centerPoint.x) * -0.008;
+        const degreeY = (e.clientY - centerPoint.y) * 0.008;
 
         const angle = getAngle(
           centerPoint.x,
