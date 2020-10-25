@@ -7,10 +7,10 @@
     <title>Nextjs Ticket</title>
   </head>
   <body>
-    <div class="ticket-visual_visual" id="ticket" style="--size: 1">
+    <div class="ticket-visual_visual" id="ticket">
+      <div class="left"></div>
+      <div class="right"></div>
       <div class="ticket-visual-wrapper">
-        <div class="left"></div>
-        <div class="right"></div>
         <div class="ticket-visual_profile">
           <div class="ticket-profile_profile">
             <img
@@ -39,61 +39,14 @@
     </div>
     <script>
       const ticketElm = document.getElementById('ticket');
-      const wrapperElm = document.querySelector('.ticket-visual-wrapper');
       const { x, y, width, height } = ticketElm.getBoundingClientRect();
-
-      function getAngle(x1, y1, x2, y2) {
-        let distY = y1 - y2;
-        let distX = x1 - x2;
-        let dist = Math.sqrt(distY * distY + distX * distX);
-        let val = distY / dist;
-        let radians = Math.asin(val);
-        let angle = radians * (180 / Math.PI);
-
-        if (x2 >= 0 && y2 >= 0) {
-          // quarter 1
-          //no transformation, do nothing
-        }
-        if (x2 >= 0 && y2 < 0) {
-          // quadrant 4
-          angle = angle + 360;
-        }
-        if (x2 < 0 && y2 < 0) {
-          // quadrant 3
-          angle = 180 - angle;
-        }
-        if (x2 < 0 && y2 > 0) {
-          // quadrant 2
-          angle = 180 - angle;
-        }
-        return angle;
-      }
 
       window.addEventListener('mousemove', (e) => {
         const centerPoint = { x: x + width / 2, y: y + height / 2 };
-        const degreeX = (e.clientX - centerPoint.x) * -0.008;
-        const degreeY = (e.clientY - centerPoint.y) * 0.008;
+        const degreeX = (e.clientY - centerPoint.y) * 0.008;
+        const degreeY = (e.clientX - centerPoint.x) * -0.008;
 
-        const angle = getAngle(
-          centerPoint.x,
-          centerPoint.y,
-          e.clientX - centerPoint.x,
-          e.clientY - centerPoint.y
-        );
-        console.log(angle);
-        ticketElm.style.transform = `perspective(1000px) rotateX(${
-          degreeY >= 5 ? 5 : degreeY <= -5 ? -5 : degreeY
-        }deg) rotateY(${
-          degreeX >= 5 ? 5 : degreeX <= -5 ? -5 : degreeX
-        }deg) scale3d(1, 1, 1)`;
-        ticketElm.style.willChange = 'transform';
-
-        wrapperElm.style.background = `linear-gradient(${angle}deg, var(--background) 0%, var(--background-light) 100%)`;
-      });
-
-      window.addEventListener('mouseout', (e) => {
-        ticketElm.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-        wrapperElm.style.background = `var(--background)`;
+        ticketElm.style.transform = `perspective(1000px) rotateX(${degreeX}deg) rotateY(${degreeY}deg)`;
       });
     </script>
   </body>
