@@ -71,7 +71,7 @@
 
       window.addEventListener('mousemove', (e) => {
         const centerPoint = { x: x + width / 2, y: y + height / 2 };
-        const degreeX = (e.clientX - centerPoint.x) * -0.005;
+        const degreeX = (e.clientX - centerPoint.x) * -0.02;
         const degreeY = (e.clientY - centerPoint.y) * 0.02;
 
         const angle = getAngle(
@@ -81,7 +81,11 @@
           e.clientY - centerPoint.y
         );
         console.log(angle);
-        ticketElm.style.transform = `perspective(1000px) rotateX(${degreeY}deg) rotateY(${degreeX}deg) scale3d(1, 1, 1)`;
+        ticketElm.style.transform = `perspective(1000px) rotateX(${
+          degreeY >= 5 ? 5 : degreeY <= -5 ? -5 : degreeY
+        }deg) rotateY(${
+          degreeX >= 5 ? 5 : degreeX <= -5 ? -5 : degreeX
+        }deg) scale3d(1, 1, 1)`;
         ticketElm.style.willChange = 'transform';
 
         wrapperElm.style.background = `linear-gradient(${angle}deg, var(--background) 0%, var(--background-light) 100%)`;
