@@ -8,7 +8,7 @@ A list of ui challenges that are implemented on [Semicolon Academy channel](http
 - 002 - [Calendar event details](002-calendar-event-details) ([video](https://youtu.be/z_DcVQx_G3M))
 - 003 - [User avatar](003-user-avatar) ([video](https://youtu.be/B_IRKPFmkdM))
 - 004 - [Auto dark mode](004-dark-mode) ([video](https://youtu.be/QC0PMPhq6CM), [article](https://medhatdawoud.net/blog/dark-mode-easily-on-web))
-- 005 - [Nextjs conf ticket clone](004-nextjs-ticket) ([video](https://youtu.be/BfAydRvM-vk), [article](https://medhatdawoud.net/blog/gradient-borders-with-curves-and-3d-animation-in-css))
+- 005 - [Nextjs conf ticket clone](005-nextjs-ticket) ([video](https://youtu.be/BfAydRvM-vk), [article](https://medhatdawoud.net/blog/gradient-borders-with-curves-and-3d-animation-in-css))
 - 006 -
 
 ## You can always suggest a new challenge
