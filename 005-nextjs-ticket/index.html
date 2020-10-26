@@ -40,9 +40,9 @@
     <script>
       const ticketElm = document.getElementById('ticket');
       const { x, y, width, height } = ticketElm.getBoundingClientRect();
+      const centerPoint = { x: x + width / 2, y: y + height / 2 };
 
       window.addEventListener('mousemove', (e) => {
-        const centerPoint = { x: x + width / 2, y: y + height / 2 };
         const degreeX = (e.clientY - centerPoint.y) * 0.008;
         const degreeY = (e.clientX - centerPoint.x) * -0.008;
 
