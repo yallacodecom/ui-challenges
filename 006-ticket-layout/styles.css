@@ -1,0 +1,16 @@
+:root {
+  --size: 1;
+  --background: #000;
+}
+
+body {
+  background: var(--background);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ticket {
+  width: 650px;
+  height: 320px;
+  margin: 100px auto;
+}
