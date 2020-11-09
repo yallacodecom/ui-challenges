@@ -9,7 +9,7 @@ A list of ui challenges that are implemented on [Semicolon Academy channel](http
 - 003 - [User avatar](003-user-avatar) ([video](https://youtu.be/B_IRKPFmkdM))
 - 004 - [Auto dark mode](004-dark-mode) ([video](https://youtu.be/QC0PMPhq6CM), [article](https://medhatdawoud.net/blog/dark-mode-easily-on-web))
 - 005 - [Nextjs conf ticket clone](005-nextjs-ticket) ([video](https://youtu.be/BfAydRvM-vk), [article](https://medhatdawoud.net/blog/gradient-borders-with-curves-and-3d-animation-in-css))
-- 006 - [Ticket layout in 5 different ways](006-ticket-layout) ([video](#), [article](https://medhatdawoud.net/blog/5-different-ways-to-create-a-ticket-layout))
+- 006 - [Ticket layout in 5 different ways](006-ticket-layout) ([video](https://youtu.be/qAXd8TDZxLE), [article](https://medhatdawoud.net/blog/5-different-ways-to-create-a-ticket-layout))
 - 007
 
 ## You can always suggest a new challenge
